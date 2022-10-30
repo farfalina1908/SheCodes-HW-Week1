@@ -12,24 +12,54 @@
          main {
             text-align: center;
          }
+         h1 {
+            color: #1b57d2;
+            font-size: 34px;
+            line-height: 48px;
+            text-align: center;
+         }
+         h2 {
+            font-size: 34px;
+            font-weight: 400;
+            line-height: 48px;
+            text-align: center;
+         }
          ul {
             list-style: none;
+            padding: 0;
          }
          li {
             display: block;
             margin: auto;
-            background-color: yellow;
+            padding: 10px 0;
+            text-align: center;
             width: 400px;
+            transition: all 200ms ease-in-out;
+         }
+
+         li:hover {
+            background-color: #fff9ef;
          }
          button {
+            display: block;
             color: #fff;
-            background-color: blue;
-            border: 1px;
-            padding: 10px 20px;
-            border-radius: 15%;
+            font-size: 16px;
+            line-height: 22px;
+            background-color: #1b57d2;
+            border: 1px solid #1b57d2;
+            padding: 16px 24px;
+            margin: 20px auto;
+            border-radius: 30%;
             box-shadow: 5 5 10 rgba 0, 0, 0, 0.3;
          }
+         button:hover {
+            background-color: #811332;
+            transition: all 200ms ease-in-out;
+            cursor: pointer;
+         }
          footer {
+            font-size: 18px;
+            opacity: 0.7;
             text-align: center;
          }
       </style>
@@ -38,7 +68,7 @@
       <header>⛅</header>
       <main>
          <h1>Currently 21 in Tokio</h1>
-         <h2>13 &#176; / 23 &#176;</h2>
+         <h2>13 &#176; / <strong> 23 &#176;</strong></h2>
          <ul>
             <li>
                <h3>🌧️ Tomorrow</h3>
@@ -56,7 +86,7 @@
          <button>Change city</button>
       </main>
       <footer>
-         <p>Coded by Matt Delac</p>
+         <p>Coded by Olena Berezina</p>
       </footer>
    </body>
 </html>
